@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    >
+<TextView
+    android:layout_height="15dp"
+    android:layout_width="fill_parent"
+     android:background="#6AA1BF"
+    >
+    
+</TextView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+           android:textSize="18sp"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="确认删除缓存？" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:minHeight="30.0dip"
+            android:orientation="horizontal" >
+
+          
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffd0d0d0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Button_ok"
+                android:layout_width="114.0dip"
+                android:layout_height="40.0dip"
+                android:gravity="center"
+                android:background="@drawable/btn_ok_selector"
+                android:text="确认" />
+
+            <Button
+                android:id="@+id/Button_qx"
+                android:layout_width="114.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/btn_cancel_selector"
+                android:gravity="center"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include_tianbu_layout"
+        layout="@layout/tianbu_layout" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/include_tianbu_layout"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/img_fanhui" />
+
+        <TextView
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选择歌单"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/imageview_setting"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@color/main_color"
+            android:paddingBottom="14dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="15dp"
+            android:paddingTop="14dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearlayout1_delete"
+        android:layout_below="@+id/linearlayout1" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageview_lajitong"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/img_lajitong" />
+
+        <TextView
+            android:id="@+id/textview_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="删除"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

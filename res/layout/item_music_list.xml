@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="5" >
+
+    <!--         android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp" -->
+    <TextView
+        android:id="@+id/textview_song_num"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="1"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:textColor="@color/white"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textview1_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="歌名" />
+
+        <TextView
+            android:id="@+id/textview2_singer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="歌手" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview3_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="15dp"
+        android:textColor="@color/white"
+        android:text="时间" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_tianbu_layout"
+        layout="@layout/tianbu_layout" />
+    
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageview_Setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/img_fanhui" />
+
+        <TextView
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_gray"
+        android:gravity="center_vertical"
+        android:text="    试听下载"
+        android:textColor="#A6a6a6"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:id="@+id/liner_settting_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="清理缓存 " />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_gray"
+        android:gravity="center_vertical"
+        android:text="    通用"
+        android:textColor="#A6a6a6"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/liner_setting_about"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="关于Songrise" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconfont_jiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+    <LinearLayout
+        android:id="@+id/liner_setting_message"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="意见反馈 " />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconfont_jiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+</LinearLayout>

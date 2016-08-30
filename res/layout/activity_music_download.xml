@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"  >
+
+    <include
+        android:id="@+id/include_tianbu_layout"
+        layout="@layout/tianbu_layout_transparent" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1_local_music"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/include_tianbu_layout"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageview_download_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/img_fanhui" />
+
+        <TextView
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="下载的歌曲"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_download_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearlayout2"
+        android:layout_below="@+id/linearlayout1_local_music"
+        android:divider="@color/transparent"
+        android:listSelector="@color/listview_pressed_color"
+        android:scrollbars="none"  >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/main_music_list_background"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/imageview1_album"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="5dp"
+            android:src="@drawable/music_icon" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/textview1_local_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="歌名"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textview2_local_singer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="歌手"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/imageview2_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_appwidget_play" />
+
+            <ImageView
+                android:id="@+id/imageview3_local_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_appwidget_play_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

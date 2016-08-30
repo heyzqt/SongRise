@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SongRisePlayer</string>
+    <string name="action_contact">Contact</string>
+    <string name="action_settings">action_settings</string>
+    <string name="order_play">列表循环</string>
+    <string name="random_play">随机播放</string>
+    <string name="single_play">单曲循环</string>
+    <string name="enter_failure_text">不能输入为空</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="ip_address">http://192.168.1.104:80/SongRise-apps/index.php/</string>
+    <string name="ip_img">http://192.168.1.104:80/SongRise-apps/Public/images/</string>
+    <string name="test">我们平时在开发Android应用的时候不可避免地都需要用到网络技术，而多数情况下应用程序都会使用HTTP协议来发送和接收网络数据。Android系统中主要提供了两种方式来进行HTTP通信，HttpURLConnection和HttpClient，几乎在任何项目的代码中我们都能看到这两个类的身影，使用率非常高</string>
+
+</resources>

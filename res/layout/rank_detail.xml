@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.38"
+        android:background="@drawable/a4"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <include
+            android:id="@+id/include_tianbu_layout"
+            layout="@layout/tianbu_layout_transparent" />
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/img_fanhui" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/image_back"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="#000000"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/rank_playall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/img_appwidget_play" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="播放全部"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.54">
+
+        <LinearLayout
+            android:id="@+id/load_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/pb_wait"
+                style="@style/myProgressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载中..." />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:divider="@color/transparent"
+            android:listSelector="@drawable/listview_normal_selector" >
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.08"
+        android:background="#2d2c2c"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/imageview1_album"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="5dp"
+            android:src="@drawable/music_icon" />
+
+        <LinearLayout
+            android:id="@+id/layout_go"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/textview1_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="歌名"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textview2_singer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="歌手"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/image_sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="7dp"
+                android:src="@drawable/img_appwidget_play" />
+
+            <ImageView
+                android:id="@+id/image_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/img_appwidget_play_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

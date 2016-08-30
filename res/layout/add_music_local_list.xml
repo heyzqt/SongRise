@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include_tianbu_layout"
+        layout="@layout/tianbu_layout" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_add_local_music"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/include_tianbu_layout"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_add_local_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/img_fanhui" />
+
+        <TextView
+            android:id="@+id/text_add_local"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="选择歌曲"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text_add_local_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:text="全选"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_add_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearlayout_add_local"
+        android:layout_below="@+id/linearlayout_add_local_music" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_add_local"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_add_local"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/img_add_music_local" />
+
+        <TextView
+            android:id="@+id/text_add_local_songlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="加入歌单"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

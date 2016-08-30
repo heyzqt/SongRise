@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_tianbu_layout"
+        layout="@layout/tianbu_layout" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/img_fanhui" />
+
+        <TextView
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="睡眠设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#5f969696"
+        android:gravity="center"
+        android:text="计时结束后,将暂停并退出播放器"
+        android:textColor="#A6a6a6" />
+
+    <LinearLayout
+        android:id="@+id/liner_time_shudown"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="不开启"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_time_shudown"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconfont_xiaogougou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+    <LinearLayout
+        android:id="@+id/liner_time_10min"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="10分钟后"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_time_10"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconfont_yuanquan" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+    <LinearLayout
+        android:id="@+id/liner_time_20min"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="20分钟后"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_time_20min"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconfont_yuanquan" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+    <LinearLayout
+        android:id="@+id/liner_time_30min"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="30分钟后"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_time_30min"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconfont_yuanquan" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+    <LinearLayout
+        android:id="@+id/liner_time_60min"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="60分钟后"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_time_60min"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconfont_yuanquan" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+    <LinearLayout
+        android:id="@+id/liner_time_diy"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="9.4"
+            android:text="自定义"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_time_diy"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconfont_yuanquan" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f0ece0" />
+
+</LinearLayout>

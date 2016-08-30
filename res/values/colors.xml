@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_window">#FFE5E5E5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#666666</color>
+    <color name="light_gray">#ece9e8</color>
+    <color name="gray_line">#d9d5d5</color>
+    <color name="main_button_color">#1e000000</color>	<!-- #6AA1BF 颜色1 -->
+    <color name="main_song_list_button_gray">#8a8a8a</color>
+    <color name="main_music_list_background">#642d2c2c</color>    <!-- #2d2c2c 颜色1 -->
+    <color name="main_music_list_background_non_transparent">#2d2c2c</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_lake">#87CEFA</color>
+    <color name="blue_dialog_lead">#6AA1BF</color>
+    <color name="blue_word">#17abe3</color>
+    
+    <color name="main_color">#264B7f</color>      <!-- #6AA1BF颜色1 SongRise主题颜色 -->
+    <color name="statusbar_bg">#00000000</color>  <!-- 系统标题栏颜色 -->
+    <color name="listview_pressed_color">#64275A9B</color>   <!-- listview点击颜色 -->
+    <color name="listview_pressed_gray_color">#d9d7d6</color>   <!-- listview点击灰色颜色 -->
+
+</resources>

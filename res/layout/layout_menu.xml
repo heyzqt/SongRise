@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start" 
+    android:background="@drawable/menu_background"><!-- #e069a1c0 -->
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/Liner_user"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <ImageView
+                android:id="@+id/imageview_user"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/img_avatar_default" />
+
+            <TextView
+                android:id="@+id/TextView_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="登陆/注册"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#5823252c" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+            <ImageView
+                android:id="@+id/LinkWifi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_wifi" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/LinkWifi"
+                android:text="仅WiFi联网"
+                android:textColor="#f0f0f0" />
+
+            <ImageView
+                android:id="@+id/imageView_wifiKai"
+                android:layout_width="60dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_setting_uncheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+            <ImageView
+                android:id="@+id/sleep"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_dingshiguanbi" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/sleep"
+                android:text="睡眠设置"
+                android:textColor="#f0f0f0" />
+
+            <TextView
+                android:id="@+id/TextView_sleep_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:gravity="right"
+                android:text="关"
+                android:textColor="#f0f0f0"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_Lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+            <ImageView
+                android:id="@+id/lockScreen"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_yinlezanting" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/lockScreen"
+                android:text="锁屏歌词"
+                android:textColor="#f0f0f0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_Shezhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+            <ImageView
+                android:id="@+id/Shezhi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_shezhi" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/Shezhi"
+                android:text="设置"
+                android:textColor="#f0f0f0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_Scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+            <ImageView
+                android:id="@+id/Scan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_scan" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/Scan"
+                android:text="扫描歌曲"
+                android:textColor="#f0f0f0" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_Tuichu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView_Tuichu"
+        android:gravity="center"
+        android:text="退出"
+        android:textColor="#f0f0f0"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView_Tuichu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/textView_Tuichu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/img_tuichu" />
+
+</RelativeLayout>

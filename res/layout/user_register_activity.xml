@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_login_backgroud"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <include
+        android:id="@+id/include_tianbu_layout"
+        layout="@layout/tianbu_layout_transparent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/image_rg_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/iconfont_fanhui1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/editview"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#00ffffff"
+            android:ems="11"
+            android:hint="设置昵称"
+            android:inputType="text" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/editview"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_phone_new"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#00ffffff"
+            android:ems="11"
+            android:hint="输入你的手机号"
+            android:inputType="number" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.5"
+            android:background="@drawable/editview"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edit_yanz"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#00ffffff"
+                android:ems="11"
+                android:hint="验证码"
+                android:inputType="number" >
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_yanz"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="发送验证码"
+            android:textColor="#6aa1bf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/editview"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_psw_new"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#00ffffff"
+            android:ems="11"
+            android:hint="设置密码"
+            android:inputType="textPassword" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/editview"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_psw_new1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#00ffffff"
+            android:ems="11"
+            android:hint="重复密码"
+            android:inputType="textPassword" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="35dp" />
+
+    <Button
+        android:id="@+id/Button_Register"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button"
+        android:text="下一步"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="点击“下一步”即默认同意"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="《SongRise用户使用条款》"
+        android:textColor="#6aa1bf"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+    </LinearLayout>
+
+</LinearLayout>
