@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -22,7 +23,7 @@ import android.widget.TextView;
  * 
  */
 public class SongListAdapter extends BaseAdapter {
-
+	private ImageView ii;
 	private List<List<Map<String, String>>> songlist;
 	private Context context;
 
